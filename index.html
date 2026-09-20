@@ -19,20 +19,20 @@
 <section id="home" class="page active">
   <div class="hello"><div><span class="muted">Sharp 👋</span><h2 id="helloName">Welcome to Aweh</h2><p>See what Mzansi is talking about.</p></div><div class="avatar">A</div></div>
   <div class="search">⌕ <input id="search" placeholder="Search rooms and people"></div>
-  <div class="chips"><button class="chip active" data-cat="All">All</button><button class="chip" data-cat="Social">Social</button><button class="chip" data-cat="Lifestyle">Lifestyle</button><button class="chip" data-cat="Career">Career</button><button class="chip" data-cat="Places">Places</button></div><div class="section-title"><h3>🔥 Live right now</h3><span>Explore</span></div>
+  <div class="section-title"><h3>🔥 Live right now</h3><span>Explore</span></div>
   <div id="rooms" class="rooms"></div>
   <div class="section-title"><h3>🟢 People online</h3><span>See all</span></div>
-  <div id="people" class="people"></div><div class="section-title"><h3>👋 Friend requests</h3><span id="requestCount">2 waiting</span></div><div id="friendRequests" class="requests"></div>
+  <div id="people" class="people"></div>
 </section>
 <section id="room" class="page">
-  <div class="roomtop"><button class="back" data-go="home">‹</button><div><h2 id="roomName">Just Chatting</h2><small id="roomCount">1,284 online</small></div><button class="dots" id="roomMenu">•••</button></div>
+  <div class="roomtop"><button class="back" data-go="home">‹</button><div><h2 id="roomName">Just Chatting</h2><small id="roomCount">1,284 online</small></div><button class="dots">•••</button></div>
   <div id="messages" class="messages"></div>
   <form id="composer" class="composer"><button type="button">＋</button><input id="messageInput" maxlength="240" placeholder="Say something..."><button class="send">➤</button></form>
 </section>
-<section id="chats" class="page"><div class="titleline"><div><h2>Chats</h2><p class="muted">Your conversations</p></div><button id="notifBtn" class="iconbtn">🔔<i>3</i></button></div><div id="chatList" class="list"></div></section><section id="dm" class="page"><div class="roomtop"><button class="back" data-go="chats">‹</button><div><h2 id="dmName">@Zee</h2><small>● online</small></div><button class="dots">•••</button></div><div id="dmMessages" class="messages"></div><form id="dmComposer" class="composer"><button type="button">＋</button><input id="dmInput" maxlength="240" placeholder="Message..."><button class="send">➤</button></form></section>
-<section id="userProfile" class="page"><div class="roomtop"><button class="back" data-go="home">‹</button><h2>Profile</h2></div><div id="viewProfile"></div></section><section id="profile" class="page">
+<section id="chats" class="page"><h2>Chats</h2><p class="muted">Your conversations</p><div id="chatList" class="list"></div></section>
+<section id="profile" class="page">
  <div class="profile-card"><div class="bigavatar">A</div><h2 id="profileName">@aweh_user</h2><button id="profileStatus" class="status">● Online</button><p id="profileBio">Just vibing ✨</p><div class="stats"><b>3<span>Rooms</span></b><b>12<span>Friends</span></b><b>🔥 7<span>Day streak</span></b></div></div>
- <div class="settings"><button id="editProfile">✏️ Edit profile <span>›</span></button><button id="darkToggle">🌙 Dark mode <span>On</span></button><button id="dataToggle">📶 Data saver <span>Off</span></button><button id="locationBtn">📍 My city <span id="cityValue">Not set</span></button><button id="aboutBtn">🇿🇦 About Aweh <span>›</span></button></div>
+ <div class="settings"><button id="editProfile">✏️ Edit profile <span>›</span></button><button id="darkToggle">🌙 Dark mode <span>On</span></button><button id="dataToggle">📶 Data saver <span>Off</span></button><button id="aboutBtn">🇿🇦 About Aweh <span>›</span></button></div>
 </section>
 </main>
 <nav><button data-tab="home" class="selected">⌂<span>Home</span></button><button data-tab="chats">◌<span>Chats</span></button><button id="roomsNav">#<span>Rooms</span></button><button data-tab="profile">◎<span>Me</span></button></nav>
